@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typer's Dungeon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="title">Typer's Dungeon</h1>
+
+    <div class="boss-section">
+      <div class="boss-name">The Gatekeeper</div>
+      <div class="boss-hp-bar">
+        <div class="hp-fill" id="hp-fill"></div>
+      </div>
+      <div class="damage-indicator" id="damageIndicator"></div>
+    </div>
+
+    <div class="sentence" id="sentence">The gate hums with cursed whispers.</div>
+
+    <input type="text" id="playerInput" placeholder="Type the sentence..." autofocus />
+    <button id="submitBtn">Attack!</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
