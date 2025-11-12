@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #200000 0%, #000 80%);
+  color: #eee;
+  font-family: 'Special Elite', monospace;
+  text-align: center;
+  overflow: hidden;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.screen.active {
+  display: flex;
+}
+
+.title {
+  font-family: 'Creepster', cursive;
+  font-size: 3em;
+  color: #b10000;
+  text-shadow: 0 0 20px #ff0000;
+}
+
+.subtitle {
+  color: #aa6666;
+  margin-bottom: 2em;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #b10000;
+  color: #eee;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #b10000;
+  color: #fff;
+}
+
+.small {
+  font-size: 1em;
+  padding: 8px 20px;
+  margin: 0 10px;
+}
+
+#boss-name {
+  font-size: 2em;
+  color: #ff4444;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+#boss-hp-container {
+  width: 80%;
+  height: 25px;
+  background: #220000;
+  border: 2px solid #550000;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#boss-hp {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #ff0000, #660000);
+  transition: width 0.3s ease;
+}
+
+#sentence {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+#player-input {
+  width: 70%;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #b10000;
+  background: transparent;
+  color: #eee;
+  outline: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#result-text {
+  font-size: 2em;
+  font-family: 'Creepster', cursive;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-shadow: 0 0 20px #ff0000;
+}
+
+#result-text.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+#end-screen .end-text {
+  font-family: 'Special Elite', monospace;
+  color: #ffcccc;
+  font-size: 1.4em;
+  text-shadow: 0 0 10px #660000;
+  margin-bottom: 20px;
+}

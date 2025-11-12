@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typer's Dungeon — Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="intro-screen" class="screen active">
+    <h1 class="title">Typer's Dungeon — Demo</h1>
+    <p class="subtitle">Where every word is a weapon.</p>
+    <button id="begin-btn" class="btn">Begin Trial</button>
+  </div>
+
+  <div id="game-screen" class="screen">
+    <h2 id="boss-name">Echo Wraith</h2>
+    <div id="boss-hp-container">
+      <div id="boss-hp"></div>
+    </div>
+    <p id="sentence"></p>
+    <input type="text" id="player-input" placeholder="Type here..." autocomplete="off" />
+    <button id="attack-btn" class="btn">Attack</button>
+    <div id="result-text"></div>
+
+    <div id="post-fight" class="hidden">
+      <p>Boss defeated! +50 Soul Ink earned.</p>
+      <button id="fight-again" class="btn small">Fight Again</button>
+      <button id="proceed" class="btn small">Proceed</button>
+    </div>
+  </div>
+
+  <div id="end-screen" class="screen">
+    <p class="end-text">You’ve cleared the demo. The dungeon still hungers…</p>
+    <button id="restart-btn" class="btn">Restart Demo</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
